@@ -1,5 +1,5 @@
-FROM lscr.io/linuxserver/debian-mate
+FROM lscr.io/linuxserver/arch-mate
 
-RUN apt update
-RUN apt install git -y
+RUN yes | pacman -Syu
+RUN yes | pacman -S git
 RUN mkdir /usr/local/sbin
