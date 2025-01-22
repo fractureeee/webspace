@@ -1,5 +1,5 @@
-FROM lscr.io/linuxserver/webtop:latest
+FROM lscr.io/linuxserver/debian-mate
 
-RUN apk update
-RUN apk add git
+RUN apt update
+RUN apt add git
 RUN mkdir /usr/local/sbin
